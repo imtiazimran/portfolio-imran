@@ -23,7 +23,7 @@ const Intro = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="mt-4 lg:mt-0 relative lg:ml-10 text-center lg:text-left"
             >
-                <h1 className="text-3xl font-bold text-white flex">
+                <h1 className="text-3xl font-bold text-white">
                     <img className='absolute left-[-40px] w-10 hidden lg:block' src={arrow} alt="" />
                     <span>Hi, I'm Imran</span>
                 </h1>

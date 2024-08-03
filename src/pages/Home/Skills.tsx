@@ -5,7 +5,7 @@ const Skills = () => {
         <Container>
             <div className='text-white '>
                 <h1>Skills</h1>
-                <div className='w-[60%] mx-auto'>
+                <div className='p-2 lg:w-[60%] mx-auto'>
                     <img src={skills} alt="" />
                 </div>
             </div>

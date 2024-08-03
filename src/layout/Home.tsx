@@ -1,3 +1,4 @@
+import ContactForm from "@/pages/Home/Contact";
 import Intro from "@/pages/Home/Intro";
 import Nav from "@/pages/Home/Nav";
 import ProjectShowcase from "@/pages/Home/Project";
@@ -12,6 +13,7 @@ const Home = () => {
             <WhoAmI/>
             <Skills/>
             <ProjectShowcase/>
+            <ContactForm/>
         </div>
     );
 };

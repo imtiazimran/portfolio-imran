@@ -17,9 +17,10 @@ const WhoAmI = () => {
                             delaySpeed={2000}
                         />
                     </span>
+                    <br />
                     Developer
                 </h1>
-                <p className="w-[500px] leading-8">
+                <p className="max-w-[500px] leading-8">
                     A self-taught MERN stack developer with over 3 years of experience. I create meaningful and delightful digital products that balance user needs and business goals. Skilled in TypeScript, Mongoose, Framer Motion, Redux, and currently learning PostgreSQL, Prisma, and Next.js. Additionally, I have completed 2 courses and an internship to further enhance my skills.
                 </p>
             </div>
