@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,51 @@ const Nav = () => {
         <div className="z-[10000] bg-[#1A0B2E] fixed w-full flex justify-between items-center py-3 px-10 text-white">
             <div className="text-lg font-bold">Logo</div>
             <div className="hidden md:flex gap-4 cursor-pointer">
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <Link
+                    activeClass="active"
+                    to="sec1"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    Home
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="sec2"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    Skills
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="sec3"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    Experience
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="sec4"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    Projects
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="sec5"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    Contact
+                </Link>
             </div>
             <div className="md:hidden flex items-center">
                 <button onClick={toggleMenu} className="focus:outline-none">

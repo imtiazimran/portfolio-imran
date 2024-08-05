@@ -4,16 +4,30 @@ import Nav from "@/pages/Home/Nav";
 import ProjectShowcase from "@/pages/Home/Project";
 import Skills from "@/pages/Home/Skills";
 import WhoAmI from "@/pages/Home/WhoAmI";
+import { Element } from "react-scroll";
 
 const Home = () => {
     return (
         <div>
-            <Nav/>
-            <Intro/>
-            <WhoAmI/>
-            <Skills/>
-            <ProjectShowcase/>
-            <ContactForm/>
+            <Nav />
+            <div className="">
+
+                <Element name="sec1" >
+                    <Intro />
+                </Element>
+                <Element name="sec2" >
+                    <WhoAmI />
+                </Element>
+                <Element name="sec3" >
+                    <Skills />
+                </Element>
+                <Element name="sec4" >
+                    <ProjectShowcase />
+                </Element>
+                <Element name="sec5" >
+                    <ContactForm />
+                </Element>
+            </div>
         </div>
     );
 };

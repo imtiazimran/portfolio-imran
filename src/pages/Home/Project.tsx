@@ -31,10 +31,11 @@ const ProjectShowcase = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center gap-16 py-10">
+        <div className="min-h-screen flex flex-col items-center justify-center gap-16 py-10 px-4">
             {projects.map((project, index) => {
                 const [ref, inView] = useInView({
                     threshold: 0.2,
+                    triggerOnce: true,
                 });
 
                 return (
@@ -44,26 +45,22 @@ const ProjectShowcase = () => {
                         variants={containerVariants}
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
-                        className="relative bg-opacity-50 backdrop-filter backdrop-blur-lg p-6 rounded-lg shadow-lg flex lg:flex-row flex-col-reverse items-center max-w-4xl w-full"
+                        className="relative bg-opacity-50 backdrop-filter backdrop-blur-lg p-4 md:p-6 rounded-lg shadow-lg flex flex-col-reverse md:flex-row items-center w-full max-w-4xl"
                     >
                         <motion.div
                             variants={textVariants}
                             initial="hidden"
                             animate={inView ? 'visible' : 'hidden'}
-                            className="lg:w-1/2 p-4 bg-white bg-opacity-10 lg:backdrop-filter backdrop-blur-lg rounded-md shadow-md border border-white border-opacity-30"
+                            className="w-full md:w-1/2 p-4 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-md shadow-md border border-white border-opacity-30 mb-4 md:mb-0"
                         >
-                            <h3 className="text-white text-2xl mb-2">{project.title}</h3>
-                            <p className="text-white mb-4">{project.description}</p>
-                            <div className="absolute bottom-4 left-4 flex space-x-2">
-                                <span className="text-white">✳️</span>
-                                <span className="text-white">✴️</span>
-                            </div>
+                            <h3 className="text-white text-xl md:text-2xl mb-2">{project.title}</h3>
+                            <p className="text-white text-sm md:text-base mb-4">{project.description}</p>
                         </motion.div>
                         <motion.div
                             variants={imageVariants}
                             initial="hidden"
                             animate={inView ? 'visible' : 'hidden'}
-                            className="lg:w-1/2 p-4"
+                            className="w-full md:w-1/2 p-4"
                         >
                             <motion.img
                                 src={project.image}

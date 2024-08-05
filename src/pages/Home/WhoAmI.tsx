@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const WhoAmI = () => {
     return (
-        <Container className="text-center flex justify-center items-center text-white">
+        <Container className="text-center flex justify-center items-center text-white w-4/5">
             <div>
                 <h1>I am a {" "}
                     <span style={{ color: 'red', fontWeight: 'bold' }}>
