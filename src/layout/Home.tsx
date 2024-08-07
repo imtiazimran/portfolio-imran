@@ -1,7 +1,7 @@
 import ContactForm from "@/pages/Home/Contact";
 import Intro from "@/pages/Home/Intro";
 import Nav from "@/pages/Home/Nav";
-import ProjectShowcase from "@/pages/Home/Project";
+import ProjectShowcase from "@/pages/Home/Projects/Project";
 import Skills from "@/pages/Home/Skills";
 import WhoAmI from "@/pages/Home/WhoAmI";
 import { Element } from "react-scroll";
