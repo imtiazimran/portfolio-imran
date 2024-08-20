@@ -15,7 +15,7 @@ const Nav = () => {
     };
 
     return (
-        <div className="z-[10000] bg-[#1A0B2E] fixed w-full flex justify-between items-center py-3 px-10 text-white">
+        <div className="z-30 bg-[#1A0B2E] fixed w-full flex justify-between items-center py-3 px-10 text-white">
             <div className="text-lg font-bold">Logo</div>
             <div className="hidden md:flex gap-4 cursor-pointer">
                 <Link

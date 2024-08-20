@@ -4,11 +4,13 @@ import Nav from "@/pages/Home/Nav";
 import ProjectShowcase from "@/pages/Home/Projects/Project";
 import Skills from "@/pages/Home/Skills";
 import WhoAmI from "@/pages/Home/WhoAmI";
+import UseScroll from "@/utils/UseScroll";
 import { Element } from "react-scroll";
 
 const Home = () => {
     return (
         <div>
+            <UseScroll/>
             <Nav />
             <div className="">
 
