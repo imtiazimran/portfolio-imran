@@ -39,8 +39,9 @@ const Card = ({ title, description, src, links, color, i, range, target, progres
             initial='hidden'
             animate='visible'
             ref={container}
-            className='h-screen flex justify-center items-center gap-6 sticky top-0'
+            className='h-screen flex justify-center items-center gap-6 sticky top-10 md:top-0'
         >
+            
             <motion.div
                 className="p-4 md:h-[350px] relative rounded-lg shadow-lg max-w-4xl mx-auto text-white"
                 style={{ scale, backgroundColor: color, top: `calc(-10% + ${i * 25}px)` }}

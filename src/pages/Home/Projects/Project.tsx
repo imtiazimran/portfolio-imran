@@ -84,7 +84,8 @@ const ProjectShowcase = () => {
   ];
 
   return (
-    <div ref={container} className="min-h-screen flex flex-col items-center justify-center gap-16 py-10 px-4">
+    <div ref={container} className="min-h-screen flex flex-col items-center justify-center px-4">
+      <h1 className='lg:text-5xl py-5 text-white'>Personal Projects</h1>
       {projects.map((project, i) => {
         const target = 1 - ((projects.length - i) * 0.05)
         return (

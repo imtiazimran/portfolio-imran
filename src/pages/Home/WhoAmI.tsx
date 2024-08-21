@@ -8,14 +8,14 @@ const WhoAmI = () => {
 
     const { scrollYProgress } = useScroll({
         target: container,
-        offset: ['start end', 'end start']
+        offset: ['start end', 'start start']
     })
 
-    const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1.5])
+    const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1])
 
     return (
         <Container className="text-center flex justify-center items-center text-white w-4/5">
-            <motion.div style={{ scale }} ref={container}>
+            <motion.div style={{ opacity }} ref={container}>
                 <h1>I am a {" "}
                     <span style={{ color: 'red', fontWeight: 'bold' }}>
                         <Typewriter
