@@ -10,13 +10,13 @@ const Skills = () => {
     offset: ["start start", "start end"],
   });
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [0.5, 2]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1.5, 0.1]);
 
   return (
     <Container>
-      <div className="text-white">
+      <div className="text-white py-10">
         <h1 className="text-3xl font-bold mb-4">Skills</h1>
-        <div ref={imgRef} className="p-2 lg:w-[60%] mx-auto">
+        <div ref={imgRef} className="p-2 lg:w-[60%] mx-auto overflow-hidden">
           <motion.img
             style={{ scale: imageScale }}
             src={skills}
