@@ -10,7 +10,7 @@ type TCardProps = {
     label: string;
     url: string;
   }[];
-  company: {
+  company?: {
     label: string;
     text: string;
   }[];
