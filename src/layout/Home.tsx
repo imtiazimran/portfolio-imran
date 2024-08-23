@@ -1,7 +1,8 @@
 import ContactForm from "@/pages/Home/Contact";
 import Intro from "@/pages/Home/Intro";
 import Nav from "@/pages/Home/Nav";
-import ProjectShowcase from "@/pages/Home/Projects/Project";
+import ProjectShowcase from "@/pages/Home/Projects/PersonalProject";
+import ProfessionalProject from "@/pages/Home/Projects/ProfessionalProjects";
 import Skills from "@/pages/Home/Skills";
 import WhoAmI from "@/pages/Home/WhoAmI";
 import UseScroll from "@/utils/UseScroll";
@@ -25,6 +26,7 @@ const Home = () => {
                 </Element>
                 <Element name="sec4" >
                     <ProjectShowcase />
+                    <ProfessionalProject/>
                 </Element>
                 <Element name="sec5" >
                     <ContactForm />
