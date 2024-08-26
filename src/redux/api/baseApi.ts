@@ -3,14 +3,14 @@ import { BaseQueryApi, BaseQueryFn, DefinitionType, FetchArgs, createApi, fetchB
 import { RootState } from "../store";
 import axios from "axios";
 import { BaseApi } from "@/utils/BaseApi";
-import { logout, setUser } from "../features/authSlice";
+import { logout, setUser } from "../features/authentication/authSlice";
 
 const baseQuery = fetchBaseQuery({
     baseUrl: BaseApi
     ,
     credentials: "include",
     prepareHeaders: (headers, { getState }) => {
-        const token = (getState() as RootState).auth?.token
+        const token = (getState() as RootState).auth?.token;
         if (token) {
             headers.set('authorization', `Bearer ${token}`)
 
@@ -59,6 +59,6 @@ const interceptor: BaseQueryFn<FetchArgs, BaseQueryApi, DefinitionType> = async 
 export const baseApi = createApi({
     reducerPath: "baseApi",
     baseQuery: interceptor,
-    tagTypes: ["baseApi", "User"],
+    tagTypes: ["baseApi", "projects"],
     endpoints: () => ({})
 })

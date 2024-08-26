@@ -7,13 +7,18 @@ import frostFitImage from '../../../assets/image/screencapture-frost-fit-vercel-
 import booktiketImage from '../../../assets/image/screencapture-imunet-vercel-app-2024-08-07-21_08_17.png'
 import toyGalaxyImage from '../../../assets/image/toyGalaxy-e33aa83c.jpeg'
 import SSSImage from '../../../assets/image/summer-camp.jpeg'
+import { useGetProjectsQuery } from '@/redux/features/projects/project.api';
 const ProjectShowcase = () => {
+  const {data, isLoading} = useGetProjectsQuery("personal")
+
+
+console.log(data);
   const container = useRef(null)
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ['start start', 'end end']
   })
-
+  
   const projects = [
     {
       title: 'Delivery Report (Yunusco)',
@@ -82,7 +87,8 @@ const ProjectShowcase = () => {
       color: '#ff5733',
     }
   ];
-
+  
+  if(isLoading) return <div>Loading....</div>
   return (
     <div ref={container} className="min-h-screen flex flex-col items-center justify-center px-4">
       <h1 className='lg:text-5xl py-5 text-white'>Personal Projects</h1>

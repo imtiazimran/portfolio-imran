@@ -2,7 +2,12 @@ import { useRef } from 'react';
 import Card from './Card';
 import { useScroll } from 'framer-motion'
 import prepeat from '../../../assets/image/prepeat.png'
+import { useGetProjectsQuery } from '@/redux/features/projects/project.api';
 const ProfessionalProject = () => {
+
+  const {data, isLoading} = useGetProjectsQuery("professional")
+
+  console.log(data);
   const container = useRef(null)
   const { scrollYProgress } = useScroll({
     target: container,
@@ -27,6 +32,9 @@ const ProfessionalProject = () => {
     }
     
   ];
+
+
+if(isLoading) return <div>Loading...</div>
 
   return (
     <div ref={container} className="min-h-screen flex flex-col items-center justify-center px-4">

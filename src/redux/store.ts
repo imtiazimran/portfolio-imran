@@ -2,7 +2,7 @@ import { FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER, persistReducer, pers
 import storage from "redux-persist/lib/storage";
 import { baseApi } from "./api/baseApi";
 import { configureStore } from "@reduxjs/toolkit";
-import authReducer from "./features/authSlice"; // Import default export correctly
+import authReducer from "./features/authentication/authSlice"; // Import default export correctly
 
 const persistConfig = {
     key: 'auth',
