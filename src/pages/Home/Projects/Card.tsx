@@ -77,7 +77,7 @@ const Card = ({
             <div className={cn(
                 company && 'flex flex-row gap-2',
             )}>
-              {links.map((link, index: Key) => (
+              {links?.map((link, index: Key) => (
                 <a
                   key={index}
                   href={link.url}

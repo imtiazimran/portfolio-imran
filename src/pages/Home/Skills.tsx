@@ -45,39 +45,40 @@ const Skills = () => {
 
   return (
     <Container className=" flex-col ">
+      <div ref={containerRef} className="min-h-screen py-20">
+        <h2 className="text-center text-3xl font-bold mb-12 text-white ">
+          My Skills
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6">
+          {skills?.map((skill, index) => {
+            const Icon = skill.icon;
+            const fromLeft = index % 2 === 0;
 
-    <div ref={containerRef} className="min-h-screen py-20">
-      <h2 className="text-center text-3xl font-bold mb-12 text-white ">My Skills</h2>
-      <div className="flex flex-wrap justify-center gap-6">
-        {skills.map((skill, index) => {
-          const Icon = skill.icon;
-          const fromLeft = index % 2 === 0;
+            const cardVariant = {
+              hidden: { opacity: 0, x: fromLeft ? -50 : 50 },
+              visible: {
+                opacity: 1,
+                x: 0,
+                transition: { duration: 0.6, ease: "easeOut" },
+              },
+            };
 
-          const cardVariant = {
-            hidden: { opacity: 0, x: fromLeft ? -50 : 50 },
-            visible: {
-              opacity: 1,
-              x: 0,
-              transition: { duration: 0.6, ease: "easeOut" },
-            },
-          };
-
-          return (
-            <motion.div
-              key={skill.name}
-              className="w-40 h-40 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg shadow-lg"
-              style={{ scale }}
-              variants={cardVariant}
-              initial="hidden"
-              animate="visible"
-            >
-              <Icon size={48} color={skill.color} />
-              <p className="mt-2 text-lg">{skill.name}</p>
-            </motion.div>
-          );
-        })}
+            return (
+              <motion.div
+                key={skill.name}
+                className="w-40 h-40 flex flex-col justify-center items-center bg-gray-800 text-white rounded-lg shadow-lg"
+                style={{ scale }}
+                variants={cardVariant}
+                initial="hidden"
+                animate="visible"
+              >
+                <Icon size={48} color={skill.color} />
+                <p className="mt-2 text-lg">{skill.name}</p>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
-    </div>
     </Container>
   );
 };
