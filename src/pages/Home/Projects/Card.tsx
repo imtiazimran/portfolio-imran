@@ -3,6 +3,7 @@ import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { Key, useRef } from "react";
 
 type TCardProps = {
+  _id?: string;
   title: string;
   description: string;
   src: string;
@@ -70,8 +71,8 @@ const Card = ({
         }}
       >
         <h2 className="text-xl md:text-2xl text-center mb-2">{title}</h2>
-        <div className="flex flex-col-reverse md:flex-row items-center gap-5">
-          <div className="p-4 bg-opacity-10 md:w-2/4 rounded-md shadow-md border border-white border-opacity-30 mb-4">
+        <div className="flex justify-between flex-col-reverse md:flex-row items-center gap-5">
+          <div className="p-4 bg-opacity-10 md:w-1/2 rounded-md shadow-md border border-white border-opacity-30 mb-4">
             <p className="text-sm md:text-base mb-4">{description}</p>
             <div className={cn(
                 company && 'flex flex-row gap-2',

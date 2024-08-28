@@ -4,19 +4,12 @@ const authorization = baseApi.injectEndpoints({
     endpoints: (build) => ({
         login: build.mutation({
             query: (data) => ({
-                url: "users/login",
+                url: "/auth/login",
                 method: "POST",
                 body: data
             }),
-        }),
-        register: build.mutation({
-            query: (data) => ({
-                url: "users/register",
-                method: "POST",
-                body: data
-            }),
-        }),
+        })
     }),
 })
 
-export const { useLoginMutation, useRegisterMutation } = authorization
+export const { useLoginMutation } = authorization

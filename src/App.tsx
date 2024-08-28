@@ -1,9 +1,9 @@
-import Home from "./layout/Home";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Outlet/>
     </div>
   );
 };

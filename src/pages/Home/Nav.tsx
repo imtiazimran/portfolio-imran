@@ -41,7 +41,7 @@ const Nav = () => {
           smooth={true}
           duration={500}
         >
-          Skills
+          Overview
         </Link>
         <Link
           activeClass="active"
@@ -50,7 +50,7 @@ const Nav = () => {
           smooth={true}
           duration={500}
         >
-          Experience
+          Skills
         </Link>
         <Link
           activeClass="active"
