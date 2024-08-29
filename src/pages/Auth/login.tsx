@@ -22,7 +22,7 @@ const LoginPage = () => {
     try {
       const result = await login(data).unwrap();
       dispatch(setUser(result.data));
-      navigate("/")
+      navigate("/dashboard/manage-projects")
     } catch (error) {
       console.log("login failed:", error);
     }
