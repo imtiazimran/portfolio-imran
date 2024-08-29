@@ -44,7 +44,7 @@ const Skills = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <Container className=" flex-col ">
+    <Container className=" flex-col mb-[650px] md:mb-0 ">
       <div ref={containerRef} className="min-h-screen py-20">
         <h2 className="text-center text-3xl font-bold mb-12 text-white ">
           My Skills

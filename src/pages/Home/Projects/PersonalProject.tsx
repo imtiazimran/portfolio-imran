@@ -18,7 +18,7 @@ const ProjectShowcase = () => {
   return (
     <div
       ref={container}
-      className="min-h-screen flex flex-col items-center justify-center px-4"
+      className="min-h-screen mt-auto flex flex-col items-center justify-center px-4"
     >
       <h1 className="lg:text-5xl py-5 text-white">Personal Projects</h1>
       {projects?.map((project: TProject, i: number) => {
