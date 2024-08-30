@@ -1,3 +1,4 @@
+import HorizontalScrollCarousel from "@/pages/Home/Cirtificates/HorizontalScrollCarousel";
 import ContactForm from "@/pages/Home/Contact";
 import Intro from "@/pages/Home/Intro";
 import Nav from "@/pages/Home/Nav";
@@ -28,7 +29,10 @@ const Home = () => {
                     <ProjectShowcase />
                     <ProfessionalProject/>
                 </Element>
-                <Element name="sec5" >
+                <Element name="sec5">
+                    <HorizontalScrollCarousel/>
+                </Element>
+                <Element name="sec6" >
                     <ContactForm />
                 </Element>
             </div>

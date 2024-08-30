@@ -68,6 +68,15 @@ const Nav = () => {
           smooth={true}
           duration={500}
         >
+          Certificates
+        </Link>
+        <Link
+          activeClass="active"
+          to="sec6"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           Contact
         </Link>
       </div>

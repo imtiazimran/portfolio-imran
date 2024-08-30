@@ -12,33 +12,33 @@ const HorizontalScrollCarousel = () => {
 
    const cards = [
     {
-      url: "/imgs/abstract/1.jpg",
-      title: "Title 1",
+      url: "../../../assets/image/certificates/PHC.jpg",
+      title: "Programming Hero Certification",
       id: 1,
     },
     {
-      url: "/imgs/abstract/2.jpg",
-      title: "Title 2",
+        url: "../../../assets/image/certificates/PHBB.jpg",
+        title: "Black Belt From Programming Hero",
       id: 2,
     },
     {
-      url: "/imgs/abstract/3.jpg",
-      title: "Title 3",
+        url: "../../../assets/image/certificates/eLearnWeb.jpg",
+        title: "e-Learn Web Development Certificate",
       id: 3,
     },
     {
-      url: "/imgs/abstract/4.jpg",
-      title: "Title 4",
+        url: "../../../assets/image/certificates/eLearnMSOffice.jpg",
+        title: "e-Learn Microsoft Office Certificate",
       id: 4,
     },
     {
-      url: "/imgs/abstract/5.jpg",
-      title: "Title 5",
+        url: "../../../assets/image/certificates/NYDC.jpg",
+        title: "National Youth Development Certificate",
       id: 5,
     },
     {
-      url: "/imgs/abstract/6.jpg",
-      title: "Title 6",
+        url: "../../../assets/image/certificates/BTEB.jpg",
+        title: "Bangladesh Technical Education Board Certificate",
       id: 6,
     },
     {
