@@ -3,7 +3,6 @@ import Container from "@/utils/Container";
 import avatar from "../../assets/image/1719953282836-removebg-preview.png";
 import arrow from "../../assets/image/Vector.png";
 import { Typewriter } from "react-simple-typewriter";
-import { Button } from "@/components/ui/button";
 const Intro = () => {
   const intro = {
     hidden: {
@@ -30,7 +29,7 @@ const Intro = () => {
       transition: {
         duration: 0.5,
         type: "spring",
-        bounch: 0.5,
+        bounce: 0.5,
       },
     },
   };
@@ -55,8 +54,26 @@ const Intro = () => {
     },
   };
 
+  const buttonHover = {
+    scale: 1.1,
+  };
+
+  const buttonAnimate = {
+    backgroundColor: [
+      "#6B21A8", // Initial purple
+      "#9333EA", // Lighter purple
+      "#7C3AED", // Slightly different purple
+      "#6B21A8", // Back to initial
+    ],
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  };
+
   return (
-    <Container className="flex py-10  justify-evenly flex-col md:flex-row items-center text-white border-b-2">
+    <Container className="flex py-10 justify-evenly flex-col md:flex-row items-center text-white border-b-2">
       <motion.div
         variants={heroImg}
         initial="initial"
@@ -110,12 +127,17 @@ const Intro = () => {
           />
         </motion.h2>
 
-        <motion.div
-            variants={introItems}
-        >
-          <Button className="bg-purple-700 hover:bg-purple-800 my-4">
+        <motion.div variants={introItems}>
+          <motion.button
+            whileHover={buttonHover}
+            animate={buttonAnimate}
+            className="px-4 py-2 my-3 bg-purple-700 text-white rounded-md"
+          >
+            <a href="https://drive.google.com/file/d/1xGHrNc2RwwRHdVcBwnQ-Js9tl01C7aVl/view?usp=sharing">
             Download CV
-          </Button>
+
+            </a>
+          </motion.button>
         </motion.div>
       </motion.div>
     </Container>

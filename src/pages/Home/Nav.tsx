@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import logo from '../../assets/image/fab.png'
+import logo from '../../assets/image/ILogo.png'
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <div className="z-30 bg-[#1A0B2E] fixed w-full flex justify-between items-center py-3 px-10 text-white">
       <div className="text-lg italic">
-    <img className="size-8" src={logo} alt="" />
+    <img className="w-4" src={logo} alt="" />
 
       </div>
       <div className="hidden md:flex gap-4 cursor-pointer">
