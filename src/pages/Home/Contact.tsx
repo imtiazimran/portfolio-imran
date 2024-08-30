@@ -1,3 +1,4 @@
+import DotGrid from '@/utils/WaterDropGrid';
 import { motion } from 'framer-motion';
 import { FieldError, FieldValues, useForm } from 'react-hook-form';
 
@@ -63,6 +64,9 @@ const ContactForm = () => {
                     </motion.button>
                 </form>
             </motion.div>
+            <div className='hidden md:block'>
+            <DotGrid/>
+            </div>
         </div>
     );
 };

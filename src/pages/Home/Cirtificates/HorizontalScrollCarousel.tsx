@@ -1,7 +1,12 @@
 import { useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Card from "./Card";
-
+import PHC from "../../../assets/image/certificates/PHC.jpg";
+import PHBB from "../../../assets/image/certificates/PHBB.jpg";
+import eLearnWeb from "../../../assets/image/certificates/eLearnWeb.jpg";
+import eLearnMSOffice from "../../../assets/image/certificates/eLearnMSOffice.jpg";
+import NYDC from "../../../assets/image/certificates/NYDC.jpg";
+import BTEB from "../../../assets/image/certificates/BTEB.jpg";
 const HorizontalScrollCarousel = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -10,46 +15,44 @@ const HorizontalScrollCarousel = () => {
 
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
-   const cards = [
+  const cards = [
     {
-      url: "../../../assets/image/certificates/PHC.jpg",
+      url: PHC,
       title: "Programming Hero Certification",
       id: 1,
     },
     {
-        url: "../../../assets/image/certificates/PHBB.jpg",
-        title: "Black Belt From Programming Hero",
+      url: PHBB,
+      title: "Black Belt From Programming Hero",
       id: 2,
     },
     {
-        url: "../../../assets/image/certificates/eLearnWeb.jpg",
-        title: "e-Learn Web Development Certificate",
+      url: eLearnWeb,
+      title: "e-Learn Web Development Certificate",
       id: 3,
     },
     {
-        url: "../../../assets/image/certificates/eLearnMSOffice.jpg",
-        title: "e-Learn Microsoft Office Certificate",
+      url: eLearnMSOffice,
+      title: "e-Learn Microsoft Office Certificate",
       id: 4,
     },
     {
-        url: "../../../assets/image/certificates/NYDC.jpg",
-        title: "National Youth Development Certificate",
+      url: NYDC,
+      title: "National Youth Development Certificate",
       id: 5,
     },
     {
-        url: "../../../assets/image/certificates/BTEB.jpg",
-        title: "Bangladesh Technical Education Board Certificate",
+      url: BTEB,
+      title: "Bangladesh Technical Education Board Certificate",
       id: 6,
-    },
-    {
-      url: "/imgs/abstract/7.jpg",
-      title: "Title 7",
-      id: 7,
     },
   ];
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
+      <h1 className="text-3xl md:text-5xl font-bold text-white text-center py-3">
+        Certificates
+      </h1>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => (
