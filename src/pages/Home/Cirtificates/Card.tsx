@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import PropTypes from "prop-types";
 
-const Card = ({ card }) => {
+const Card = ({ card }: { card: any }) => {
   return (
     <div
       key={card.id}
