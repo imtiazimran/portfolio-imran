@@ -1,0 +1,220 @@
+[{
+  "_id": {
+    "$oid": "66cb9df605298e4666386066"
+  },
+  "title": "Prepeat",
+  "description": "A system designed to give service to the customer on monthly basis. Features include adding services, deleting services, editing services, and booking services. and the services are booking food for 1 to 3 time per day upto 1 month. Customer also can book other services like Book laundry services, book chef for occasion. etc.",
+  "image": "https://i.ibb.co/5h4vg4s/prepeat.png",
+  "projectType": "Professional",
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://prepeat.in",
+      "_id": {
+        "$oid": "66cb9df605298e4666386067"
+      }
+    },
+    {
+      "label": "Figma",
+      "url": "https://www.figma.com/design/5WdmiPad2kxKvA8FIql91n/PrepEat?node-id=0-1&t=wK4jKZ2woC4AX1hf-0",
+      "_id": {
+        "$oid": "66cb9df605298e4666386068"
+      }
+    }
+  ],
+  "company": [
+    {
+      "label": "Company",
+      "text": "Ricoz.in",
+      "_id": {
+        "$oid": "66cb9df605298e4666386069"
+      }
+    },
+    {
+      "label": "Project",
+      "text": "https://prepeat.in",
+      "_id": {
+        "$oid": "66cb9df605298e466638606a"
+      }
+    },
+    {
+      "label": "Role",
+      "text": "Backend Developer/Full Stack Developer",
+      "_id": {
+        "$oid": "66cb9df605298e466638606b"
+      }
+    }
+  ],
+  "color": "#724a1f",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cc6e1839fbd5f11d6e41d8"
+  },
+  "title": "Delivery Report (Yunusco)",
+  "description": "A system designed to streamline the process of managing orders and deliveries for a garments accessories company. Features include adding jobs, delivery tracking, deleting jobs, daily delivery report, total delivery log, and editing delivery details.",
+  "image": "https://i.ibb.co/281G6jF/screencapture-htldelivery-netlify-app-2024-08-07-21-01-28.png",
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://htldelivery.netlify.app/"
+    },
+    {
+      "label": "Server Code",
+      "url": "https://github.com/imtiazimran/Delivery-Report-Yunusco-FrontEnd"
+    },
+    {
+      "label": "Client Code",
+      "url": "https://github.com/imtiazimran/Delivery-Report-Yunusco-BackEnd"
+    }
+  ],
+  "color": "#f8b400",
+  "projectType": "personal"
+},
+{
+  "_id": {
+    "$oid": "66cc6e1839fbd5f11d6e41d9"
+  },
+  "title": "FrostFit",
+  "description": "Comprehensive platform for managing winter clothes distribution to communities in need. Features authentication, private dashboard, dynamic charts, and responsive design.",
+  "image": "https://i.ibb.co/zhKkyTC/screencapture-frost-fit-vercel-app-2024-08-07-20-26-45-1.png",
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://frost-fit.vercel.app/"
+    },
+    {
+      "label": "Client Code",
+      "url": "https://github.com/imtiazimran/FrostFit"
+    },
+    {
+      "label": "Server Code",
+      "url": "https://github.com/imtiazimran/FrostFit-Backend"
+    }
+  ],
+  "color": "#00a8e8",
+  "projectType": "personal"
+},
+{
+  "_id": {
+    "$oid": "66cc6e1839fbd5f11d6e41da"
+  },
+  "title": "Book Tickets Management",
+  "description": "A platform for bus ticket management, designed for bus management teams and owners to oversee seat bookings. Features real-time seat booking updates, secure booking management, and responsive design.",
+  "image": "https://i.ibb.co/qxcNsRS/screencapture-imunet-vercel-app-2024-08-07-21-08-17.png",
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://imunet.vercel.app"
+    },
+    {
+      "label": "Server Code",
+      "url": "https://github.com/imtiazimran/bookTicketBackend"
+    },
+    {
+      "label": "Client Code",
+      "url": "https://github.com/imtiazimran/bookTicket"
+    }
+  ],
+  "color": "#ff6f61",
+  "projectType": "personal"
+},
+{
+  "_id": {
+    "$oid": "66cc6e1839fbd5f11d6e41db"
+  },
+  "title": "Chef's Conclave",
+  "description": "A platform that unites chefs, fosters collaboration, and celebrates the art of culinary creation. Chefs can write blogs, share unique recipes, and showcase their finest culinary creations while engaging with a supportive community.",
+  "image": "https://i.ibb.co/3BHQD6v/chef-Conclave-8817f402.jpg",
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://chef-s-conclave.web.app/"
+    },
+    {
+      "label": "Server Code",
+      "url": "https://github.com/imtiazimran/Chef-s-Conclave-Fron-end-PHA-10"
+    },
+    {
+      "label": "Client Code",
+      "url": "https://github.com/imtiazimran/Chef-s-Conclave-Fron-end-PHA-10"
+    }
+  ],
+  "color": "#d4a5a5",
+  "projectType": "personal"
+},
+{
+  "_id": {
+    "$oid": "66cc6e1839fbd5f11d6e41dd"
+  },
+  "title": "Sorcery Summer School",
+  "description": "An online academy integrating Stripe.js for secure and convenient payment processing. Offers captivating courses in magic with a seamless and user-friendly payment experience.",
+  "image": "https://i.ibb.co/qs68s89/sssfront.png",
+  "links": [
+    {
+      "label": "Live Site",
+      "url": "https://summer-camp-school-6fa65.web.app/"
+    },
+    {
+      "label": "Server Code",
+      "url": "https://github.com/imtiazimran/SourcerySummerSchool-back-end"
+    },
+    {
+      "label": "Client Code",
+      "url": "https://chef-s-conclave.web.app/"
+    }
+  ],
+  "color": "#ff5733",
+  "projectType": "personal"
+},
+{
+  "_id": {
+    "$oid": "66d0d1da297cf44e6391426f"
+  },
+  "title": "Ads Impact",
+  "description": "The project aimed to create a platform where users could manage ads across multiple platforms like Facebook, Google, LinkedIn, and Twitter from one place. Users would create, post, and manage their ads, handle payments, and track performance all in one system. However, due to financial constraints, the project was never launched, preventing it from reaching the market and serving its intended users.",
+  "image": "http://res.cloudinary.com/deja1oeor/image/upload/v1724961076/pkkwtggnldbgbyydnzww.png",
+  "projectType": "Professional",
+  "links": [
+    {
+      "label": "Backend Live",
+      "url": "https://adsimpact.vercel.app",
+      "_id": {
+        "$oid": "66d0d1da297cf44e63914270"
+      }
+    },
+    {
+      "label": "Figma",
+      "url": "https://www.figma.com/design/Bc6QVPthIE0aJsU9S6vJ1o/AdsImpact?node-id=128-29692&node-type=FRAME&t=k2KEImoUWLSmfEtI-0",
+      "_id": {
+        "$oid": "66d0d1da297cf44e63914271"
+      }
+    }
+  ],
+  "company": [
+    {
+      "label": "Ricoz",
+      "text": "Ricoz.in",
+      "_id": {
+        "$oid": "66d0d1da297cf44e63914272"
+      }
+    },
+    {
+      "label": "Project",
+      "text": "https://prepeat.in",
+      "_id": {
+        "$oid": "66d0d1da297cf44e63914273"
+      }
+    },
+    {
+      "label": "Role",
+      "text": "Backend Developer",
+      "_id": {
+        "$oid": "66d0d1da297cf44e63914274"
+      }
+    }
+  ],
+  "color": "#2f242e",
+  "__v": 0
+}]

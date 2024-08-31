@@ -1,42 +1,49 @@
-import Container from "@/utils/Container";
-import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
-import { Typewriter } from "react-simple-typewriter";
-
+import { motion } from "framer-motion";
+import { useState } from "react";
+import useMousePosition from "@/utils/useMousePosition";
+import styles from "./page.module.scss";
 const WhoAmI = () => {
-    const container = useRef(null)
+  const [isHovered, setIsHovered] = useState(false);
+  const { x, y } = useMousePosition();
+  const size = isHovered ? 400 : 40;
 
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ['start end', 'start start']
-    })
+  return (
+    <main className={`${styles.main} text-xl md:text-5xl`}>
+      <motion.div
+        className={styles.mask}
+        animate={{
+          WebkitMaskPosition: `${(x as unknown as number) - size / 2}px ${
+            (y as unknown as number) - size / 2
+          }px`,
+          WebkitMaskSize: `${size}px`,
+        }}
+        transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+      >
+        <p
+          onMouseEnter={() => {
+            setIsHovered(true);
+          }}
+          onMouseLeave={() => {
+            setIsHovered(false);
+          }}
+        >
+          A self-taught MERN stack developer with 3+ years of experience,
+          skilled in TypeScript, Mongoose, Framer Motion, and Redux. Currently
+          learning PostgreSQL, Prisma, and Next.js. Completed 2 courses and an
+          internship to enhance my skills.
+        </p>
+      </motion.div>
 
-    const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1])
-
-    return (
-        <Container className="text-center flex justify-center items-center text-white w-4/5">
-            <motion.div style={{ opacity }} ref={container}>
-                <h1>I am a {" "}
-                    <span style={{ color: 'red', fontWeight: 'bold' }}>
-                        <Typewriter
-                            words={['Frontend', 'Backend', 'Full Stack', 'MERN']}
-                            loop={Infinity}
-                            cursor
-                            cursorStyle='_'
-                            typeSpeed={100}
-                            deleteSpeed={50}
-                            delaySpeed={2000}
-                        />
-                    </span>
-                    <br />
-                    Developer
-                </h1>
-                <p className="max-w-[500px] leading-8">
-                    A self-taught MERN stack developer with over 3 years of experience. I create meaningful and delightful digital products that balance user needs and business goals. Skilled in TypeScript, Mongoose, Framer Motion, Redux, and currently learning PostgreSQL, Prisma, and Next.js. Additionally, I have completed 2 courses and an internship to further enhance my skills.
-                </p>
-            </motion.div> 
-        </Container>
-    );
+      <div className={`${styles.body} text-xl md:text-5xl `}>
+        <p>
+          Experienced MERN stack developer with 3+ years in the field,
+          proficient in TypeScript, Mongoose, Framer Motion, and Redux. Actively
+          learning PostgreSQL, Prisma, and Next.js. Strengthened skills through
+          2 courses and an internship.
+        </p>
+      </div>
+    </main>
+  );
 };
 
 export default WhoAmI;
